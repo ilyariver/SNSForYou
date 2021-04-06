@@ -1,0 +1,310 @@
+.basket-content {
+  position: relative;
+  z-index: 100;
+
+  margin-bottom: 3rem;
+
+  &__is-empty {
+    padding: 40px 20px 40px 40px;
+
+    background-color: #ffffff94;
+
+    border-radius: 5px;
+
+    color: #353535a1;
+    font-weight: 600;
+
+    text-transform: uppercase;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+
+    text-transform: uppercase;
+    border-bottom: 1px solid #777777;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 1.6rem;
+    height: 1.6rem;
+
+    padding: 5px;
+
+    background-image: url("../img/icons/red-close.svg");
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: center;
+    background-color: transparent;
+
+    border: none;
+  }
+
+  &__img-content {
+    font-size: 0;
+  }
+
+  &__link {
+    display: block;
+    width: 12rem;
+  }
+
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    padding-right: 3rem;
+  }
+
+  &__title {
+    margin: 0 0 1rem 0;
+
+    font-size: 1.4rem;
+    text-align: end;
+
+    color: #777777;
+  }
+
+  &__cost {
+    position: relative;
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+  }
+
+  &__counter {
+    display: flex;
+    align-items: center;
+  }
+
+  &__init-counter {
+    width: 1.9rem;
+    height: 1.9rem;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 0.6rem;
+
+    border: 1px solid #777777;
+    border-radius: 50%;
+
+    &--reduce {
+      background-image: url("../img/icons/minus.svg");
+      background-size: 1rem;
+    }
+    &--increase {
+      background-image: url("../img/icons/plus.svg");
+      background-size: 1.8rem;
+    }
+  }
+
+  &__input {
+    height: 3rem;
+    width: 3rem;
+
+    margin: 0 0.5rem;
+
+    text-align: center;
+    font-weight: 600;
+
+    background-color: transparent;
+
+    border: none;
+  }
+
+  &__total {
+    display: flex;
+    justify-content: center;
+
+    text-transform: uppercase;
+
+    font-size: 3.5rem;
+  }
+
+  &__total-text {
+    margin-right: 1.3rem;
+  }
+
+  &__total-sum {
+    font-weight: 600;
+  }
+
+  @include extra-small {
+    flex-basis: 45%;
+    margin: 0;
+
+    &__close {
+      width: 0.8rem;
+      height: 0.8rem;
+
+      background-size: 0.7rem;
+
+      cursor: pointer;
+    }
+
+    &__item {
+      margin-bottom: 1rem;
+      padding-bottom: 0.8rem;
+    }
+
+    &__body {
+      padding-right: 1.5rem;
+    }
+
+    &__img-content {
+      margin-right: 0.5rem;
+    }
+
+    &__link {
+      width: 4rem;
+    }
+
+    &__title {
+      margin: 0 0 0.5rem 0;
+      font-size: .5rem;
+    }
+
+    &__cost {
+      margin: 0 0 0.5rem 0;
+      font-size: 0.8rem;
+    }
+
+    &__input {
+      height: 1.2rem;
+      width: 1.2rem;
+    }
+
+    &__init-counter {
+      width: 1rem;
+      height: 1rem;
+
+      padding: .25rem;
+
+      cursor: pointer;
+
+      &--reduce {
+        background-size: 0.4rem;
+      }
+
+      &--increase {
+        background-size: 1.0rem;
+      }
+    }
+
+    &__total {
+      font-size: 1.2rem;
+    }
+  }
+
+  @include small {
+
+    &__input {
+      height: 0.8rem;
+      width: 0.8rem;
+
+      margin: 0 .2rem;
+    }
+
+    &__init-counter {
+      width: 0.65rem;
+      height: 0.65rem;
+
+      &--reduce {
+        background-size: 0.2rem;
+      }
+
+      &--increase {
+        background-size: 0.6rem;
+      }
+    }
+  }
+
+  @include small {
+    &__close {
+      width: .6rem;
+      height: .6rem;
+      background-size: .5rem;
+    }
+  }
+
+  @include medium {
+
+    &__close {
+      width: .5rem;
+      height: .5rem;
+      background-size: .4rem;
+    }
+
+    &__total {
+      font-size: 1rem;
+    }
+  }
+
+  @include large {
+
+    &__close {
+      width: .4rem;
+      height: .4rem;
+
+      background-size: .3rem;
+    }
+
+    &__item {
+      margin-bottom: 0.5rem;
+      padding-bottom: .4rem;
+    }
+
+    &__link {
+      width: 2.2rem;
+    }
+
+    &__title {
+      margin: 0 0 0.2rem 0;
+      font-size: .3rem;
+    }
+
+    &__cost {
+      margin: 0 0 .3rem 0;
+      font-size: .5rem;
+    }
+
+    &__input {
+      height: 0.55rem;
+      width: 0.55rem;
+
+      margin: 0 .1rem;
+    }
+
+    &__init-counter {
+      width: 0.43rem;
+      height: 0.43rem;
+
+      padding: .15rem;
+
+      &--reduce {
+        background-size: 0.15rem;
+      }
+
+      &--increase {
+        background-size: 0.4rem;
+      }
+    }
+
+    &__total {
+      font-size: 0.8rem
+    }
+  }
+}

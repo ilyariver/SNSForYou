@@ -1,0 +1,191 @@
+.basket-form {
+  position: relative;
+  z-index: 100;
+
+  &__title {
+    font-family: "Open Sans";
+    font-weight: 400;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+  }
+
+  // &__initial-user {
+
+  // }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 1rem;
+    span {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__input {
+    display: block;
+
+    width: 100%;
+    height: 5rem;
+
+    padding: 10px;
+    border: 1px solid #3333;
+
+    &--textarea {
+      resize:vertical;
+      min-height: 5rem;
+    }
+
+    &::placeholder {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+  }
+
+  &__button-form {
+    width: 100%;
+    height: 5rem;
+
+    margin-top: 2rem;
+
+    background-color: #333;
+
+    text-transform: uppercase;
+    border: 1px solid #3333;
+    color: #fff;
+
+  }
+
+  @include extra-small {
+    flex-basis: 50%;
+    width: 100%;
+
+    &__input {
+      height: 1.8rem;
+
+      &::placeholder {
+        font-size: 0.7rem;
+      }
+
+      &--textarea {
+        min-height: 1.8rem;
+      }
+    }
+
+    &__label {
+      margin-bottom: 0.5rem;
+
+      span {
+        margin-bottom: .2rem;
+      }
+      &--address {
+        width: 30%;
+      }
+    }
+
+    &__contacts {
+
+      &--send-to {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &__send {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__button-form {
+      height: 1.8rem;
+      margin: 22.1px 0 0 0;
+
+      font-size: 0.5rem;
+
+      cursor: pointer;
+    }
+  }
+
+  @include small {
+
+    &__title {
+      margin: 0 0 0.4rem 0;
+    }
+
+    &__input {
+      height: 1.4rem;
+      padding: 0 20px;
+
+      &::placeholder {
+        font-size: 0.5rem;
+      }
+
+      &--textarea {
+        min-height: 1.4rem;
+      }
+    }
+
+    &__button-form {
+      height: 1.4rem;
+      margin: 24px 0 0 0;
+    }
+  }
+
+  @include medium {
+
+    &__label {
+      margin-bottom: .3rem;
+      span {
+        margin-bottom: .27rem;
+      }
+    }
+
+    &__input {
+      height: 1.3rem;
+
+      &::placeholder {
+        font-size: 0.3rem;
+      }
+      &--textarea {
+        min-height: 1.3rem;
+      }
+    }
+
+    &__title {
+      margin: 0.5rem 0 .3rem 0;
+    }
+
+    &__button-form {
+      height: 1.3rem;
+      font-size: .35rem;
+
+      margin: 28px 0 0 0;
+    }
+  }
+
+  @include large {
+
+    &__label {
+      span {
+        margin-bottom: .21rem;
+      }
+    }
+
+    &__input {
+      height: 1rem;
+
+      &--textarea {
+        min-height: 1rem;
+      }
+    }
+    &__button-form {
+      height: 1rem;
+
+      font-size: .25rem;
+    }
+  }
+}

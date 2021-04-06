@@ -1,0 +1,11 @@
+.small-container {
+
+  @include extra-small {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  @include small {
+    width: 70%;
+  }
+}

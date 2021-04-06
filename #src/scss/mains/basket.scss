@@ -1,0 +1,25 @@
+.basket {
+  font-family: "Sansation";
+  letter-spacing: 1px;
+
+  @include extra-small {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @include medium {
+
+    &--container {
+      width: 840px;
+      margin: 0 auto;
+    }
+  }
+
+  @include large {
+
+    &--container {
+      width: 1000px;
+    }
+  }
+}

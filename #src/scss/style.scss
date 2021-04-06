@@ -1,0 +1,86 @@
+//GLOBAL
+@import "mixins";
+@import "variables";
+@import "normalize";
+@import "global";
+
+@import "fonts";
+@import "visually-hidden";
+@import "container";
+
+
+
+//HEADER
+
+@import "header/header";
+@import "header/burger";
+@import "header/menu";
+@import "header/logo";
+@import "header/burger-anim";
+@import "header/left-menu";
+
+//MAIN
+@import "mains/main";
+@import "mains/section-banner";
+@import "mains/social-frame";
+
+@import "mains/section-cards";
+@import "mains/card-product";
+@import "mains/tabs-triggers";
+@import "mains/cards";
+@import "mains/section-exchange";
+@import "mains/section-title";
+@import "mains/bread-crumbs";
+@import "mains/small-container";
+
+@import "mains/section-care";
+
+@import "mains/section-contacts";
+@import "mains/slogan";
+
+@import "mains/comments";
+@import "mains/owl-nav";
+@import "mains/owl-nav";
+
+@import "mains/product";
+
+@import "mains/card-product-content";
+@import "mains/swiper";
+@import "mains/hash-buttons";
+@import "mains/product-description";
+
+@import "mains/basket";
+@import "mains/basket-content";
+@import "mains/basket-form";
+@import "mains/send-form";
+
+@import "mains/section-we";
+
+@import "mains/slider-product";
+
+
+//FOOTER
+
+@import "footer/footer";
+
+//MODAL
+
+@import "modals/popup-order";
+@import "modals/popup-thanks";
+
+@import "mains/plug";
+
+//BUTTON
+
+@import "btn/btn";
+
+////SLIDER
+//
+//@import "blocks/slider";
+//
+//
+//
+//
+//
+//
+//

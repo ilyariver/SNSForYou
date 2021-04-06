@@ -1,0 +1,85 @@
+.main {
+  position: relative;
+
+  overflow: hidden;
+
+  width: 100%;
+
+  background-color: #f1f1f1;
+
+  &__banner {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  &__description {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  //&:before {
+  //  content: "";
+  //  position: absolute;
+  //  top: 0;
+  //
+  //  width: 100%;
+  //  height: 100%;
+  //  //background-image: url("../img/main/bw.png");
+  //
+  //  z-index: 100;
+  //}
+
+  //&:after {
+  //  content: "";
+  //  position: absolute;
+  //  top: 0;
+  //
+  //  width: 100%;
+  //  height: 100%;
+  //
+  //  //background-color: #ffffff;
+  //
+  //  background: $mainGradient;
+  //  z-index: 150;
+  //  opacity: 0.8;
+  //}
+
+  @include extra-small {
+
+    &--instagram {
+
+      &:before {
+        right: 5%;
+        bottom: 10%;
+      }
+    }
+  }
+
+  @include medium {
+
+    &--instagram {
+
+      &:before {
+        right: 15%;
+        bottom: 10%;
+
+        background-size: 250px;
+      }
+    }
+  }
+
+  @include large {
+    &--photo {
+
+      &:after {
+        left: 5%;
+        top: 18%;
+
+        width: 450px;
+        height: 450px;
+
+        background-size: 430px;
+      }
+    }
+  }
+}

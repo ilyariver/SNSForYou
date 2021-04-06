@@ -1,0 +1,15 @@
+.section-care {
+  position: relative;
+
+  padding-top: 90px;
+  padding-bottom: 40px;
+
+  &--icons {
+    position: relative;
+    overflow: hidden;
+  }
+
+  @include medium {
+    padding-top: 40px;
+  }
+}

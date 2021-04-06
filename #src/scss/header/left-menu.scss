@@ -1,0 +1,70 @@
+.left-menu {
+  transform: translateX(-120%);
+  transition: transform 0.3s ease-in-out;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: #ffffff;
+
+  opacity: 0.98;
+  overflow: auto;
+
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  font-size: 13px;
+
+  z-index: 1100;
+
+  &__list {
+    padding: 70px 5rem 0 5rem;
+
+    font-weight: 700;
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 13px;
+
+    &:hover {
+      color: #d4b565;
+    }
+  }
+
+  &__podlist {
+    margin-top: 10px;
+  }
+
+  &__poditem {
+    padding-left: 30px;
+    font-weight: 400;
+  }
+
+  @include extra-small {
+     &__list {
+       padding: 60px 5rem 60px 5rem;
+     }
+  }
+
+   @include small {
+     width: 45%;
+     &__list {
+       padding: 70px 2rem 60px 2rem;
+     }
+  }
+
+  @include medium {
+    width: 40%;
+    font-size: 14px;
+  }
+}
+
+.left-menu.open {
+  transform: translateX(0);
+  transition: transform 0.2s;
+}

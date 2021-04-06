@@ -1,0 +1,9 @@
+.card-product-content {
+  display: flex;
+  flex-direction: column;
+
+  @include extra-small {
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+}

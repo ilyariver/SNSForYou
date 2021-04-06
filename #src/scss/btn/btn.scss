@@ -1,0 +1,222 @@
+.btn {
+  display: flex;
+
+  &__buy {
+    width: 14rem;
+    height: 4rem;
+
+    background-color: transparent;
+
+    border-radius: 5px;
+    border: none;
+
+    font-weight: 300;
+    font-size: 1.4rem;
+
+    color: #fff;
+    text-transform: uppercase;
+    transition: background-color 0.1s ease-in;
+
+    outline: none;
+    cursor: pointer;
+
+    &--double {
+      height: 6rem;
+      width: 70%;
+
+      //border-radius: 5px 0 0 5px;
+      border-radius: 0;
+      color: #333;
+
+      margin-right: 0.5rem;
+    }
+
+    &--gray {
+      //background-color: #bfbfbf;
+      border: 1px solid #969696;
+
+      //&:hover {
+      //  background-color: darken(#70BCF5, 10%);
+      //  transition: 0.1s ease-in;
+      //}
+    }
+
+    &--border {
+      background-color: #333333;
+      border-radius: 0;
+      color: #fff;
+
+      letter-spacing: 2px;
+    }
+
+
+  }
+
+  &__more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 6rem;
+    width: 50%;
+
+    font-size: 1.4rem;
+    font-weight: 300;
+
+    text-transform: uppercase;
+    //border-radius: 0 5px 5px 0;
+    border-radius: 0;
+    cursor: pointer;
+    letter-spacing: normal;
+    //transition: background-color 0.3s ease-in, color 0s ease-in, border 0.3s ease-in;
+
+    &--amiant {
+      &:hover {
+        background-color: $amiant;
+        box-shadow: 0 0 0 4px lighten($amiant, 10%);
+      }
+    }
+    &--gavana {
+      &:hover {
+        background-color: $gavana;
+        color: #ffffff;
+        box-shadow: 0 0 0 4px lighten($gavana, 25%);
+      }
+    }
+    &--kastor {
+      &:hover {
+        background-color: $kastor;
+        color: #ffffff;
+        box-shadow: 0 0 0 4px lighten($kastor, 50%);
+      }
+    }
+    &--marengo {
+      &:hover {
+        background-color: lighten($marengo, 10%);
+        color: #fff;
+        box-shadow: 0 0 0 4px lighten($marengo, 30%);
+      }
+    }
+    &--ofit {
+      &:hover {
+        background-color: $ofit;
+        color: #fff;
+        box-shadow: 0 0 0 4px lighten($ofit, 25%);
+
+      }
+    }
+    &--orlean {
+      &:hover {
+        background-color: $orlean;
+        color: #fff;
+        box-shadow: 0 0 0 4px lighten($orlean, 30%);
+
+      }
+    }
+    &--avrora {
+      &:hover {
+        background-color: $avrora;
+        color: #fff;
+        box-shadow: 0 0 0 4px lighten($avrora, 20%);
+      }
+    }
+    &--kongo {
+      &:hover {
+        background-color: $kongo;
+        color: #fff;
+        box-shadow: 0 0 0 4px lighten($kongo, 15%);
+      }
+    }
+    &--milory {
+      &:hover {
+        background-color: $milory;
+        color: #fff;
+        box-shadow: 0 0 0 4px lighten($milory, 10%);
+      }
+    }
+    &--prunel {
+      &:hover {
+        background-color: $prunel;
+        color: #fff;
+        box-shadow: 0 0 0 3px lighten($prunel, 60%);
+      }
+    }
+
+    &--vide {
+      &:hover {
+        background-color: $vide;
+        color: #fff;
+        box-shadow: 0 0 0 4px lighten($vide, 20%);
+      }
+    }
+  }
+
+  @include extra-small{
+
+    &__buy {
+      height: 1.8rem;
+      width: 6rem;
+      font-size: 0.6rem;
+
+      &--double {
+        width: 70%;
+        margin-right: 0.2rem;
+      }
+    }
+
+    &__buy--double, .btn__more {
+      height: 3rem;
+      font-size: 0.6rem;
+    }
+  }
+
+  @include small {
+
+    &__buy {
+      height: 1.5rem;
+      width: 5.5rem;
+      font-size: 0.5rem;
+      &--double {
+        width: 80%;
+      }
+    }
+
+    &__buy--double, .btn__more {
+      height: 2.3rem;
+      font-size: .6rem;
+    }
+  }
+  @include medium {
+    &__buy {
+      height: 1.3rem;
+      width: 4.5rem;
+      font-size: 0.4rem;
+      &--double {
+        width: 80%;
+      }
+    }
+
+    &__buy--double, .btn__more {
+      height: 1.7rem;
+      font-size: .4rem;
+    }
+  }
+
+  @include large {
+
+    &__buy {
+      height: 1rem;
+      width: 3.5rem;
+      font-size: 0.3rem;
+      &--double {
+        width: 80%;
+        margin-right: 0.1rem;
+      }
+    }
+
+    &__buy--double, .btn__more {
+      height: 1.2rem;
+      font-size: .26rem;
+    }
+  }
+}

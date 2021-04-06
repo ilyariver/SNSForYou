@@ -1,0 +1,123 @@
+.product-description {
+  margin-bottom: 30px;
+
+  text-transform: uppercase;
+
+  font-family: "Sansation";
+
+  &__title {
+    margin: 0 0 10px 0;
+
+    font-size: 2.3rem;
+    font-weight: 400;
+  }
+
+  &__care {
+    margin-bottom: 2rem;
+    padding: 0.8rem 2rem;
+
+    background-color: transparent;
+
+    border-radius: 5px;
+    border: 1px solid #01010139;
+
+    font-size: 1.3rem;
+
+    color: #333333;
+  }
+
+  &__price {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  &__list {
+    padding: 0;
+    color: #828282;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+  }
+
+  &__list-title {
+    color: #333333;
+
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    margin-left: 15px;
+    margin-bottom: 12px;
+
+    font-weight: 300;
+  }
+
+
+  @include extra-small {
+
+    &__title {
+      font-size: 1rem;
+    }
+
+    &__care {
+      margin-bottom: 1.3rem;
+      padding: .3rem 0.8rem;
+
+      font-size: 0.3rem;
+    }
+
+    &__price {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    &__list {
+      font-size: 0.5rem;
+    }
+
+    &__list-title {
+      font-size: .5rem;
+    }
+  }
+
+  @include small {
+    &__list-title {
+      font-size: .45rem;
+    }
+  }
+
+  @include large {
+
+    &__title {
+      font-size: 0.5rem;
+    }
+
+    &__care {
+      margin-bottom: 0.5rem;
+      padding: .1rem 0.4rem;
+
+      font-size: 0.25rem;
+
+      cursor: pointer;
+    }
+
+    &__buy {
+      margin-bottom: 1rem;
+    }
+
+    &__price {
+      margin-bottom: 0.3rem;
+      font-size: 1rem;
+    }
+
+    &__list {
+      font-size: 0.35rem;
+      font-weight: 400;
+    }
+
+    &__list-title {
+      font-size: .4rem;
+    }
+  }
+}

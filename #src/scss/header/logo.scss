@@ -1,0 +1,29 @@
+.logo {
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  picture {
+    display: flex;
+  }
+
+  @include extra-small {
+    &__link {
+      width: 45px;
+      height: 45px;
+      background-size: 100%;
+    }
+  }
+
+  @include large {
+    &__link {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.send-form {
+
+  @include extra-small {
+    &__element {
+      width: 47.5%;
+    }
+  }
+}

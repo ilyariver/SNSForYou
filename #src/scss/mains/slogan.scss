@@ -1,0 +1,57 @@
+.slogan {
+  display: flex;
+  justify-content: center;
+
+  font-family: Sansation;
+  text-transform: uppercase;
+
+  &__text {
+
+    display: flex;
+    align-items: center;
+
+    height: 30px;
+
+    padding-left: 40px;
+
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-image: url("../img/logo/brown-logo.svg");
+
+    text-align: center;
+    font-size: 8px;
+  }
+
+  @include extra-small {
+
+    &__text {
+      padding-left: 55px;
+      background-size: 40px;
+      font-size: 11px;
+    }
+  }
+
+  @include small {
+
+    &__text {
+      height: 36px;
+      padding-left: 55px;
+
+      background-size: 45px;
+
+      font-size: 13px;
+    }
+  }
+
+  @include medium {
+
+    &__text {
+      height: 40px;
+      padding-left: 55px;
+
+      background-size: 50px;
+
+      font-size: 16px;
+    }
+  }
+}

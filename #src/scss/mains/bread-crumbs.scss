@@ -1,0 +1,80 @@
+.bread-crumbs {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+
+  font-family: Sansation;
+  font-size: 9px;
+
+  color: #777777;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+    margin: 0 18px 5px 0;
+
+    &:last-child {
+      color: #9865ab;
+    }
+
+    &:nth-last-child(n+2):after {
+      content: "";
+
+      position: absolute;
+      top: 5px;
+      right: 0;
+
+      transform: translateY(-50%);
+
+      margin: 0 -12px;
+
+      width: 4px;
+      height: 4px;
+
+      background-image: url("../img/icons/crumbs.svg");
+      background-repeat: no-repeat;
+      background-size: 4px;
+      background-position: center;
+    }
+  }
+
+  &__crumbs {
+    margin: 0 15px;
+  }
+
+  &__link {
+
+    &--main {
+      color: #000;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  @include small {
+    font-size: 13px;
+
+    &__item {
+
+      &:nth-last-child(n+2):after {
+        top: 8px;
+      }
+    }
+  }
+
+  @include small {
+
+    &__item {
+      margin-right: 60px;
+
+      &:nth-last-child(n+2):after {
+        margin: 0 -30px;
+      }
+    }
+  }
+}

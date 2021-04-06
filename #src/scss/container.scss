@@ -1,0 +1,28 @@
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include extra-small {
+    width: 720px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include small {
+    width: 960px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include medium {
+    width: 1140px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include large {
+    width: 1320px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

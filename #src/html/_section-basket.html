@@ -1,0 +1,136 @@
+<main class="main main--gradient">
+    <section class="section-exchange section-exchange--sns-logo">
+
+        <div class="bread-crumbs">
+            <div class="container">
+                <ul class="bread-crumbs__list list-reset">
+                    <li class="bread-crumbs__item">
+                        <a href="/" class="bread-crumbs__link bread-crumbs__link--main">главная</a>
+                    </li>
+                    <li class="bread-crumbs__item">оформление заказа</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="basket basket--container">
+                <div class="basket-content">
+
+                    <p class="basket-content__is-empty js-is-empty">
+                        в корзине пусто...
+                    </p>
+
+                    <ul class="basket-content__list list-reset js-basket-list">
+                        <li class="basket-content__item js-basket-item">
+                            <button class="basket-content__close js-basket-content-close" aria-label="кнопка закрытия"></button>
+                            <div class="basket-content__img-content">
+                                <a href="/card-sweetshot-vide.html" class="basket-content__link">
+                                    <img src="/img/small-img/sweetvide.jpg" alt="свитшот SNS 2021" class="basket-content__img">
+                                </a>
+                            </div>
+
+                            <div class="basket-content__body">
+                                <h1 class="basket-content__title">свишот орлеановый</h1>
+                                <div class="basket-content__cost">5 000 <span>₽</span></div>
+                                <div class="basket-content__counter js-init-counter">
+                                    <button class="basket-content__init-counter basket-content__init-counter--reduce js-counter-minus" aria-label="убавить товар"></button>
+                                    <input type="text" class="basket-content__input" name="quantity" value="1" disabled>
+                                    <button class="basket-content__init-counter basket-content__init-counter--increase js-counter-plus" aria-label="прибавить товар"></button>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="basket-content__item js-basket-item">
+                            <button class="basket-content__close js-basket-content-close" aria-label="кнопка закрытия"></button>
+                            <div class="basket-content__img-content">
+                                <a href="/card-longsliv-kongo.html" class="basket-content__link">
+                                    <img src="/img/small-img/longkongo.jpg" alt="свитшот SNS 2021" class="basket-content__img">
+                                </a>
+                            </div>
+
+                            <div class="basket-content__body">
+                                <h1 class="basket-content__title">лонгслив конго</h1>
+                                <div class="basket-content__cost">4 500 <span>₽</span></div>
+                                <div class="basket-content__counter js-init-counter">
+                                    <button class="basket-content__init-counter  basket-content__init-counter--reduce js-counter-minus" aria-label="убавить товар"></button>
+                                    <input type="text" class="basket-content__input" name="quantity" value="1" disabled>
+                                    <button class="basket-content__init-counter basket-content__init-counter--increase js-counter-plus" aria-label="прибавить товар"></button>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                    <div class="basket-content__total js-total">
+                        <div class="basket-content__total-text">Итого:</div>
+                        <div class="basket-content__total-sum">9500 <span>₽</span></div>
+                    </div>
+                </div>
+
+                <form class="basket-form form-send">
+                    <div class="basket-form__initial-user">
+                        <label class="basket-form__label">
+                            <span>Имя</span>
+                            <input type="text" name="Имя заказчика" class="basket-form__input"  required placeholder="Влада">
+                        </label>
+
+                        <label class="basket-form__label">
+                            <span>Фамилия</span>
+                            <input type="text" name="Фамилия заказчика" class="basket-form__input"  required placeholder="Баранова">
+                        </label>
+                    </div>
+                    <div class="basket-form__contacts">
+                        <label class="basket-form__label">
+                            <span>Телефон</span>
+                            <input type="text" name="Номер телефона" class="basket-form__input js-input-phone"  required placeholder="+7 999 999-99-99">
+                        </label>
+
+                        <label class="basket-form__label">
+                            <span>Почта</span>
+                            <input type="text" name="Почта" class="basket-form__input js-input-mail"  required placeholder="user@email.com">
+                        </label>
+                    </div>
+
+                    <h2 class="basket-form__title">Доставка</h2>
+
+                    <div class="basket-form__initial-user">
+                        <label class="basket-form__label">
+                            <span>Город</span>
+                            <input type="text" name="Город" class="basket-form__input"  required placeholder="г. Москва">
+                        </label>
+
+                        <label class="basket-form__label">
+                            <span>Улица</span>
+                            <input type="text" name="Улица" class="basket-form__input">
+                        </label>
+                    </div>
+                    <div class="basket-form__contacts basket-form__contacts--send-to">
+                        <label class="basket-form__label basket-form__label--address">
+                            <span>Дом</span>
+                            <input type="text" name="Номер дома" class="basket-form__input">
+                        </label>
+
+                        <label class="basket-form__label basket-form__label--address">
+                            <span>Корпус</span>
+                            <input type="text" name="Корпус" class="basket-form__input">
+                        </label>
+
+                        <label class="basket-form__label basket-form__label--address">
+                            <span>Кв./Офис</span>
+                            <input type="text" name="Кв./Офис" class="basket-form__input">
+                        </label>
+                    </div>
+                    <div class="basket-form__send send-form">
+                        <label class="basket-form__label send-form__element">
+                            <span>Коментарий</span>
+                            <textarea type="text" name="Комментарий к заказу" class="basket-form__input basket-form__input--textarea"></textarea>
+                        </label>
+                        <button class="basket-form__button-form send-form__element js-basket-form" type="submit">Отправить заказ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>

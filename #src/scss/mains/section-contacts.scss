@@ -1,0 +1,71 @@
+.section-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &__info {
+    margin: 0 0 20px 0;
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #33333340;
+    font-size: 12px;
+  }
+
+  &__addresses {
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    height: 30px;
+
+    margin-bottom: 15px;
+    padding-left: 40px;
+
+    background-repeat: no-repeat;
+    background-size: 30px;
+
+    &--instagram {
+      background-image: url("../img/icons/instagram-color.svg");
+
+    }
+
+    &--whatsapp  {
+      background-image: url("../img/icons/whatsapp-color.svg");
+    }
+
+    &--email {
+      background-image: url("../img/icons/email.svg");
+      text-decoration: underline;
+    }
+  }
+
+  @include extra-small {
+    flex-direction: row;
+
+    &__info {
+      margin: 0 20px 0 0;
+      padding: 0 20px 0 0;
+
+      border-bottom: none;
+      border-right: 1px solid #33333340;
+
+      text-align: right;
+    }
+  }
+
+  @include medium {
+    &__info {
+      font-size: 16px;
+    }
+  }
+}

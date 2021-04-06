@@ -1,0 +1,181 @@
+.menu {
+  letter-spacing: 4px;
+
+  &__list {
+    display: none;
+    justify-content: space-between;
+
+    font-family: Sansation;
+    font-size: 11px;
+    font-weight: 300;
+
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  @include small {
+
+    &__top {
+      height: 61px;
+      background-color: white;
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__about-item {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__item {
+      position: relative;
+      cursor: pointer;
+
+      &:nth-child(2) {
+        padding: 10px 68px 10px 68px;
+      }
+      &:nth-child(3) {
+        padding: 10px 84px 10px 84px;
+      }
+      &:nth-child(4) {
+        padding: 10px 68px 10px 68px;
+      }
+
+      &:hover:nth-child(n+2) {
+        background-color: #333333;
+        color: #FFE6AD;
+      }
+
+      .menu__sublist {
+        position: absolute;
+        top: 32px;
+        left: 0;
+
+        padding: 10px 20px;
+
+        display: none;
+
+        background-color: #333333;
+        font-weight: 300;
+        z-index: 1000;
+
+        box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+
+
+        &--catalog {
+          width: 213px;
+        }
+
+        &--buyers {
+          width: 294px;
+        }
+
+        &--about {
+          padding-right: 20px;
+
+          left: 0;
+
+          width: 191px;
+        }
+      }
+
+      &:hover {
+        .menu__sublist {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+
+    &__link {
+      display: block;
+      padding: 15px 0;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+
+  @include medium {
+
+    .menu__sublist {
+      top: 45px;
+
+      padding: 25px 15px;
+
+      &--catalog {
+        width: 213px;
+      }
+
+      &--buyers {
+        width: 294px;
+      }
+
+      &--about {
+        left: 0;
+        width: 191px;
+      }
+    }
+
+    &__item {
+
+      .menu__sublist {
+        top: 32px;
+
+        &--catalog {
+          width: 212px;
+        }
+
+        &--buyers {
+          width: 293px;
+        }
+
+        &--about {
+          width: 191px;
+        }
+      }
+    }
+  }
+
+  @include large {
+
+    &__top {
+      height: 76px;
+    }
+
+    &__list {
+      font-size: 13px;
+    }
+
+    &__item {
+
+      &:nth-child(2) {
+        padding: 15px 68px 15px 68px;
+      }
+      &:nth-child(3) {
+        padding: 15px 84px 15px 84px;
+      }
+      &:nth-child(4) {
+        padding: 15px 68px 15px 68px;
+      }
+
+      .menu__sublist {
+
+        top: 45px;
+        &--catalog {
+          width: 222px;
+        }
+        &--buyers {
+          width: 308px;
+        }
+        &--about {
+          width: 197px;
+        }
+      }
+    }
+  }
+}

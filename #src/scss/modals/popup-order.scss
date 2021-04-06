@@ -1,0 +1,356 @@
+.popup-order {
+  display: none;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  //padding: 0.5rem 1rem;
+
+  width: 35rem;
+  max-height: 100%;
+
+  transform: translate(-50%, -50%);
+  letter-spacing: 3px;
+
+  z-index: 1600;
+  overflow: auto;
+
+  &__content {
+    width: 100%;
+    //width: 450px;
+    padding: 30px;
+    background-color: #fff;
+  }
+
+  &__header {
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  &__img-content {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  &__right-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: "Sansation";
+    margin-left: 3rem;
+  }
+
+  &__name {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  &__cost {
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+
+  &__img {
+    width: 8rem;
+  }
+
+  // for button care
+  &__text {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__list {
+    margin-bottom: 2rem;
+    padding-left: 15px;
+
+    font-size: 1rem;
+  }
+
+  &__item {
+    margin-bottom: 1rem;
+  }
+  // end for button care
+
+  &__button-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 5rem;
+
+    padding: 0 2rem;
+
+    background-color: transparent;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-weight: 300;
+    font-size: 1.4rem;
+
+    border: 1px solid #333333;
+
+    cursor: pointer;
+    &:first-child {
+      margin-bottom: 10px;
+
+      background-color: #333;
+      border: none;
+
+      color: aliceblue;
+    }
+  }
+
+  &__btn-text {
+    line-height: 4.8rem;
+  }
+
+  @include extra-small {
+    top: 50%;
+
+    min-width: 400px;
+    width: 400px;
+
+    &__content {
+      padding: 30px;
+    }
+
+    &__title {
+      margin-bottom: 1rem;
+      font-size: 0.5rem;
+    }
+
+    &__img-content {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+
+    &__right-text {
+      margin-left: 1rem;
+    }
+
+    &__name {
+      margin-bottom: 0.5rem;
+      font-size: .8rem;
+    }
+
+    &__cost {
+      font-size: 1.5rem;
+    }
+
+    &__img {
+      width: 5rem;
+    }
+
+
+    // for button care
+    &__text {
+      font-size: 0.5rem;
+    }
+
+    &__list {
+      margin-bottom: 1rem;
+      font-size: 0.5rem;
+    }
+
+    &__item {
+      margin-bottom: 0.5rem;
+    }
+    // end for button care
+
+
+    &__button {
+      height: 2rem;
+
+      padding: 1.1rem .6rem;
+
+      font-size: .5rem;
+    }
+
+    &__btn-text {
+      line-height: 2rem;
+    }
+  }
+
+  @include small {
+    &__title {
+      margin-bottom: 0.5rem;
+      font-size: .3rem;
+    }
+
+    &__img-content {
+      display: flex;
+      margin-bottom: 0.6rem;
+    }
+
+    &__right-text {
+      margin-left: 1rem;
+    }
+
+    &__img {
+      width: 4rem;
+    }
+
+    &__name {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+      font-size: .5rem;
+    }
+
+    &__cost {
+      font-size: 1.2rem;
+    }
+
+    // for button care
+    &__list {
+      font-size: 0.45rem;
+    }
+    // end for button care
+
+    &__button {
+      height: 1.8rem;
+      padding: 0 .5rem;
+      font-size: 0.4rem;
+    }
+  }
+
+  @include medium {
+
+    &__title {
+      margin-bottom: .5rem;
+      font-size: 0.25rem;
+    }
+
+    &__img-content {
+      margin-bottom: .5rem;
+    }
+
+    &__right-text {
+      margin-left: 1rem;
+    }
+
+    &__name {
+      margin-bottom: 0.4rem;
+      font-size: .4rem;
+    }
+
+    &__cost {
+      font-size: .9rem;
+    }
+
+    &__img {
+      width: 3rem;
+    }
+
+    // for button care
+    &__list {
+      font-size: 0.35rem;
+    }
+    // end for button care
+
+    &__button {
+      height: 1.4rem;
+      font-size: 0.35rem;
+    }
+
+    &__btn-text {
+      line-height: 1.5rem;
+    }
+  }
+
+  @include large {
+    &__title {
+      margin-bottom: .5rem;
+      font-size: 0.2rem;
+    }
+
+    &__img-content {
+      margin-bottom: .3rem;
+    }
+
+    &__right-text {
+      margin-left: 0.8rem;
+    }
+
+    &__name {
+      margin-bottom: 0.4rem;
+      font-size: .25rem;
+    }
+
+    &__cost {
+      font-size: .65rem;
+    }
+
+    &__img {
+      width: 2.2rem;
+    }
+
+    // for button care
+    &__text {
+      font-size: 0.3rem;
+    }
+
+    &__button {
+      height: 1rem;
+
+      font-size: .25rem;
+    }
+
+    &__btn-text {
+      line-height: 1.2rem;
+    }
+
+    &__list {
+      margin-bottom: 0.4rem;
+      font-size: 0.3rem;
+    }
+
+    &__item {
+      margin-bottom: 0.3rem;
+    }
+    // end for button care
+  }
+}
+
+.popup-order-overlay {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #00000030;
+  backdrop-filter: blur(3px);
+  z-index: 1500;
+}
+
+.popup-order.open, .popup-order-overlay.open {
+  display: block;
+}

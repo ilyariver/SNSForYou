@@ -1,0 +1,58 @@
+.slider-product {
+  position: relative;
+
+  font-size: 0;
+
+    &__arrow {
+      position: absolute;
+      top: 0;
+      height: 100%;
+
+      width: 5rem;
+
+      background-image: url("../img/icons/next.svg");
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 3rem;
+
+      outline: none;
+      opacity: 0.5;
+
+      z-index: 1000;
+
+      &--next {
+        right: 0;
+      }
+
+      &--prev {
+        transform: rotate(180deg);
+      }
+
+      &:active {
+        background-color: #ffffff70;
+      }
+    }
+
+  &__images {
+    margin-bottom: 20px;
+  }
+
+  @include extra-small {
+
+    &__arrow {
+      width: 40px;
+      opacity: 0;
+
+      background-size: 50%;
+
+      transition: background-color 0.1s ease-in-out, opacity 0.2s;
+      cursor: pointer;
+
+
+    }
+  }
+
+  &:hover .slider-product__arrow {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,377 @@
+.product {
+  margin-top: 2rem;
+  font-family: "Sansation";
+  letter-spacing: 3px;
+
+  &__link {
+    display: block;
+  }
+
+  &__images {
+    position: relative;
+    min-height: 49.1rem;
+
+    margin-bottom: 20px;
+    font-size: 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    //width: calc(100% / 3 - 60px);
+
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+
+  &__img-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 100%;
+  }
+
+  &__img {
+    //height: 100%;
+    width: 100%;
+  }
+
+
+  &__color-content {
+    margin: 0 0 .5rem 0;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-weight: 100;
+    color: #333;
+
+    //&--amiant {
+    //  background-color: $amiant;
+    //  color: #333;
+    //}
+    //
+    //&--avrora {
+    //  background-color: $avrora;
+    //}
+    //
+    //&--gavana {
+    //  background-color: $gavana;
+    //}
+    //
+    //&--kastor {
+    //  background-color: $kastor;
+    //}
+    //
+    //&--kongo {
+    //  background-color: $kongo;
+    //  color: #757575;
+    //}
+    //
+    //&--milory {
+    //  background-color: $milory;
+    //}
+    //
+    //&--marengo {
+    //  background-color: $marengo;
+    //}
+    //
+    //&--ofit {
+    //  background-color: $ofit;
+    //}
+    //
+    //&--orlean {
+    //  background-color: $orlean;
+    //}
+    //
+    //&--vide {
+    //  background-color: $vide;
+    //}
+    //
+    //&--prunel {
+    //  background-color: $prunel;
+    //}
+  }
+
+  &__name-color {
+    padding-right: 20%;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+  }
+
+  //&__color {
+  //  width: 3rem;
+  //  height: 3rem;
+  //
+  //  border-radius: 50%;
+  //  border: 2px solid #d6d6d6;
+  //
+  //  &--amiant {
+  //    background-color: $amiant;
+  //  }
+  //
+  //  &--avrora {
+  //    background-color: $avrora;
+  //    border: 2px solid #fac3ff;
+  //  }
+  //
+  //  &--gavana {
+  //    background-color: $gavana;
+  //    border: 2px solid #616161;
+  //  }
+  //
+  //  &--kastor {
+  //    background-color: $kastor;
+  //  }
+  //
+  //  &--kongo {
+  //    background-color: $kongo;
+  //    border: 2px solid #ffda7b;
+  //  }
+  //
+  //  &--milory {
+  //    background-color: $milory;
+  //  }
+  //
+  //  &--marengo {
+  //    background-color: $marengo;
+  //    border: 2px solid #868686;
+  //  }
+  //
+  //  &--ofit {
+  //    background-color: $ofit;
+  //  }
+  //
+  //  &--orlean {
+  //    border: 2px solid #ffcdc6f2;
+  //    background-color: $orlean;
+  //  }
+  //
+  //  &--vide {
+  //    border: 2px solid #a4a0fff2;
+  //    background-color: $vide;
+  //  }
+  //
+  //  &--prunel {
+  //    border: 2px solid #a5a5a5f2;
+  //    background-color: $prunel;
+  //  }
+  //}
+
+  &__title {
+    color: #a7a7a7;
+
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  &__cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 2.3rem;
+  }
+
+
+
+  @include extra-small{
+    //&--container {
+    //  width: 720px;
+    //
+    //  margin-top: 1rem;
+    //  margin-right: auto;
+    //  margin-left: auto;
+    //}
+
+    &__item {
+      width: calc(100% / 2 - 20px);
+
+      margin-bottom: 3rem;
+    }
+
+    &__images {
+      min-height: 20rem;
+    }
+
+    &__color-content {
+      margin: 0 0 .4rem 0;
+    }
+
+    &__type-cost {
+      margin-bottom: 0.8rem;
+    }
+
+    &__name-color {
+      margin-right: 1rem;
+      font-size: 1rem;
+    }
+
+    &__color {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
+
+    &__title {
+      font-size: 0.7rem;
+    }
+
+    &__price {
+      margin-bottom: 0.1rem;
+      font-size: 1rem;
+    }
+
+    &__buy-btn {
+      padding: 15px 35px;
+
+      min-width: 150px;
+      min-height: 40px;
+
+      height: auto;
+      width: auto;
+
+      font-size: 0.6rem;
+    }
+  }
+
+  @include small {
+    &__images {
+      min-height: 17rem;
+    }
+  }
+  @include medium {
+
+
+    &__item {
+      width: calc(100% / 3 - 30px);
+
+      margin-bottom: 2rem;
+    }
+
+    &__images {
+      min-height: 13.52rem;
+    }
+
+    &__img-main {
+      height: 13.52rem;
+
+      transition: opacity 0.1s ease-in;
+
+      &:hover {
+        opacity: 0;
+        transition: opacity 0.2s ease-in;
+      }
+    }
+
+    &__name-color {
+      font-size: 0.8rem;
+      margin-right: 1.8rem;
+    }
+
+    &__type-cost {
+      margin-bottom: 0.4rem;
+    }
+
+    &__color {
+      min-width: 0.8rem;
+      min-height: 0.8rem;
+      max-width: 0.8rem;
+      max-height: 0.8rem;
+    }
+
+    &__title {
+      font-size: 0.5rem;
+    }
+
+    &__price {
+      font-size: 0.7rem;
+    }
+
+    &__buy-btn {
+      font-size: .35rem;
+    }
+    &__list {
+      &:after {
+        content: "";
+
+        width: calc(100% / 3 - 30px);
+      }
+    }
+  }
+
+  @include large {
+
+    &--container {
+      width: 1120px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &__list {
+      &:after {
+        content: "";
+
+        width: calc(100% / 3 - 50px);
+      }
+    }
+
+    &__item {
+      width: calc(100% / 3 - 50px);
+
+      margin-bottom: 1.5rem;
+    }
+
+    &__images {
+      min-height: 9.3rem;
+    }
+
+    &__img-main {
+      height: 9.3rem;
+    }
+
+    &__name-color {
+      font-size: 0.5rem;
+    }
+
+    &__color-content {
+      margin-bottom: 0.2rem;
+    }
+
+    &__type-cost {
+      margin-bottom: 0.2rem;
+    }
+
+    &__color {
+      min-width: 0.6rem;
+      min-height: 0.6rem;
+      max-width: 0.6rem;
+      max-height: 0.6rem;
+    }
+
+    &__title {
+      font-size: 0.35rem;
+    }
+
+    &__price {
+      font-size: 0.4rem;
+    }
+
+    &__buy-btn {
+      font-size: .26rem;
+    }
+  }
+}

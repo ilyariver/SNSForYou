@@ -1,0 +1,87 @@
+<main class="main">
+    <section class="section-exchange">
+        <div class="container">
+
+            <div class="bread-crumbs">
+                <ul class="bread-crumbs__list list-reset">
+                    <li class="bread-crumbs__item">
+                        <a href="/index.html" class="bread-crumbs__link bread-crumbs__link--main">главная</a>
+                    </li>
+                    <li class="bread-crumbs__item">
+                        <a href="/longsliv.html" class="bread-crumbs__link bread-crumbs__link--main">каталог лонгслив</a>
+                    </li>
+                    <li class="bread-crumbs__item">лонгслив вайдовый</li>
+                </ul>
+            </div>
+
+            <div class="card-product-content">
+
+                <!--slider-->
+                <div class="slider">
+                    <div class="slider__buttons-next">
+                        <div class="slider__button-next slider__button-next--prev"></div>
+                        <div class="slider__button-next slider__button-next--next"></div>
+                    </div>
+                    <div class="slider__images">
+                        <div class="swiper-container swiper-container--image">
+                            <ul class="slider__list  list-reset js-slider-cards swiper-wrapper">
+                                <li class="slider__item swiper-slide">
+                                    <a href="/img/carousel-img/vide/longsliv/longslivvide1.jpg" class="slider__link" data-fancybox="gallery" data-caption="SNS - For You [лонгслив]"><img src="/img/carousel-img/vide/longsliv/longslivvide1.jpg" alt="девушка в лонгслив от SNS" class="carousel-card__img"></a>
+                                </li>
+                                <li class="slider__item swiper-slide">
+                                    <a href="/img/carousel-img/vide/longsliv/longslivvide2.jpg" class="slider__link" data-fancybox="gallery" data-caption="SNS - For You [лонгслив]"><img src="/img/carousel-img/vide/longsliv/longslivvide2.jpg" alt="девушка в лонгслив от SNS" class="carousel-card__img"></a>
+                                </li>
+                                <li class="slider__item swiper-slide">
+                                    <a href="/img/carousel-img/vide/longsliv/longslivvide3.jpg" class="slider__link" data-fancybox="gallery" data-caption="SNS - For You [лонгслив]"><img src="/img/carousel-img/vide/longsliv/longslivvide3.jpg" alt="девушка в лонгслив от SNS" class="carousel-card__img"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="slider__thumbs">
+                        <div class="swiper-container swiper-container--thumbs">
+                            <div class="hash-buttons swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="/img/carousel-img/vide/longsliv/longslivvide1.jpg" alt="девушка в лонгслив от SNS" class="hash-buttons__img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/carousel-img/vide/longsliv/longslivvide2.jpg" alt="девушка в лонгслив от SNS" class="hash-buttons__img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/carousel-img/vide/longsliv/longslivvide3.jpg" alt="девушка в лонгслив от SNS" class="hash-buttons__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--slider end-->
+
+                <div class="product-description">
+                    <h2 class="product-description__title">лонгслив вайдовый</h2>
+                    <div class="product-description__buy">
+                        <div class="product-description__price">5000 <span>₽</span></div>
+                        @@include('_buy-button.html')
+                    </div>
+
+                    <ul class="product-description__list section-exchange__list--orange-square">
+                        <li class="product-description__item">Лонгслив выполнен из европейского Футера высочайшего качества компакт пенье.</li>
+                        <li class="product-description__item">Изнанка - хлопковая петелька. На лицевой стороне тканное плотно, которое не вытягивается и не пиллингуется (не скатывается). </li>
+
+                        <h3 class="product-description__list-title">Технические характеристики:</h3>
+
+                        <li class="product-description__item">Общая длина по спинке 74 сантиметров.</li>
+                        <li class="product-description__item">Низкая Линия плеча</li>
+                        <li class="product-description__item">Размер единый</li>
+                        <li class="product-description__item">В комплекте пояс 320см и завязки на рукава 55см</li>
+                    </ul>
+                    @@include('_care.html')
+                </div>
+            </div>
+
+
+            @@include('_slogan.html')
+
+        </div>
+    </section>
+</main>

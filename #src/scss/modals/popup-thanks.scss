@@ -1,0 +1,107 @@
+.popup-thanks {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  padding: 3rem 2rem;
+
+  transform: translate(-50%, -50%);
+
+  width: 35rem;
+
+  background-color: white;
+
+  font-family: Sansation;
+  z-index: 1600;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+  }
+
+  &__title {
+    position: relative;
+    font-size: 2rem;
+
+    &:after {
+      content: "";
+
+      position: absolute;
+      top: -1rem;
+      left: -5rem;
+
+      width: 4rem;
+      height: 4rem;
+
+      background-image: url("../img/icons/done.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  &__text {
+    margin-bottom: 3rem;
+
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  @include extra-small {
+    width: 23rem;
+    padding: 2rem;
+    &__title {
+      font-size: 1.2rem;
+      &:after {
+        top: -0.4rem;
+        left: -3rem;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+
+    &__text {
+      margin-bottom: 2rem;
+      font-size: 0.6rem;
+    }
+  }
+
+  @include small {
+    width: 20rem;
+
+    padding: 1.5rem;
+
+    &__text {
+      margin-bottom: 1.2rem;
+      font-size: .5rem;
+    }
+  }
+
+  @include medium {
+    width: 12rem;
+
+    padding: 1rem;
+
+    &__title {
+      font-size: 0.5rem;
+      &:after {
+        top: -.25rem;
+        left: -1.5rem;
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+
+    &__text {
+      margin-bottom: 1rem;
+      font-size: .35rem;
+    }
+  }
+}
+
+.popup-thanks.open {
+  display: block;
+}

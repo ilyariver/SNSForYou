@@ -1,0 +1,95 @@
+<main class="main">
+    <section class="section-exchange">
+        <div class="container">
+
+            <div class="bread-crumbs">
+                <ul class="bread-crumbs__list list-reset">
+                    <li class="bread-crumbs__item">
+                        <a href="/index.html" class="bread-crumbs__link bread-crumbs__link--main">главная</a>
+                    </li>
+                    <li class="bread-crumbs__item">
+                        <a href="/hoodi.html" class="bread-crumbs__link bread-crumbs__link--main">каталог худи</a>
+                    </li>
+                    <li class="bread-crumbs__item">худи офитовый</li>
+                </ul>
+            </div>
+
+            <div class="card-product-content">
+
+                <!--slider-->
+                <div class="slider">
+                    <div class="slider__buttons-next">
+                        <div class="slider__button-next slider__button-next--prev"></div>
+                        <div class="slider__button-next slider__button-next--next"></div>
+                    </div>
+                    <div class="slider__images">
+                        <div class="swiper-container swiper-container--image">
+                            <ul class="slider__list  list-reset js-slider-cards swiper-wrapper">
+                                <li class="slider__item swiper-slide">
+                                    <a href="/img/carousel-img/ofit/hoodi/hoodiofit1.jpg" class="slider__link" data-fancybox="gallery" data-caption="SNS - For You [худи]">
+                                        <img src="/img/carousel-img/ofit/hoodi/hoodiofit1.jpg" alt="девушки в свитшоте SNS" class="carousel-card__img">
+                                    </a>
+                                </li>
+                                <li class="slider__item swiper-slide">
+                                    <a href="/img/carousel-img/ofit/hoodi/hoodiofit2.jpg" class="slider__link" data-fancybox="gallery" data-caption="SNS - For You [худи]">
+                                        <img src="/img/carousel-img/ofit/hoodi/hoodiofit2.jpg" alt="девушки в свитшоте SNS" class="carousel-card__img">
+                                    </a>
+                                </li>
+                                <li class="slider__item swiper-slide">
+                                    <a href="/img/carousel-img/ofit/hoodi/hoodiofit3.jpg" class="slider__link" data-fancybox="gallery" data-caption="SNS - For You [худи]">
+                                        <img src="/img/carousel-img/ofit/hoodi/hoodiofit3.jpg" alt="девочка в свитшоте SNS" class="carousel-card__img">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="slider__thumbs">
+                        <div class="swiper-container swiper-container--thumbs">
+                            <div class="hash-buttons swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="/img/carousel-img/ofit/hoodi/hoodiofit1.jpg" alt="девушки в худи SNS" class="hash-buttons__img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/carousel-img/ofit/hoodi/hoodiofit2.jpg" alt="девушки в худи SNS" class="hash-buttons__img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/carousel-img/ofit/hoodi/hoodiofit3.jpg" alt="девочка в худи SNS" class="hash-buttons__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--slider end-->
+
+                <div class="product-description">
+                    <h2 class="product-description__title">худи офитовый</h2>
+                    <div class="product-description__buy">
+                        <div class="product-description__price">5000 <span>₽</span></div>
+                        @@include('_buy-button.html')
+                    </div>
+
+                    <ul class="product-description__list section-exchange__list--orange-square">
+                        <li class="product-description__item">Худи выполнен из европейского Футера высочайшего качества компакт пенье.</li>
+                        <li class="product-description__item">Изнанка - хлопковая петелька. На лицевой стороне тканное плотно, которое не вытягивается и не пиллингуется (не скатывается). </li>
+
+
+                        <h3 class="product-description__list-title">Технические характеристики:</h3>
+
+                        <li class="product-description__item">Общая длина по спинке 70 сантиметров.</li>
+                        <li class="product-description__item">Низкая Линия плеча</li>
+                        <li class="product-description__item">Размер единый</li>
+                        <li class="product-description__item">Глубокий двойной капюшон с продольным сечением</li>
+                        <li class="product-description__item">Точки сборки отстрочены двойной декоративной строчкой</li>
+                    </ul>
+                    @@include('_care.html')
+                </div>
+            </div>
+
+
+            @@include('_slogan.html')
+
+        </div>
+    </section>
+</main>
